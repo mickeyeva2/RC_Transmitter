@@ -872,7 +872,10 @@ void checkBattery() {
     lastTrigger = millis();
 
 #if F_CPU == 16000000 // 16MHz / 5V
-    txBatt = (analogRead(BATTERY_DETECT_PIN) / 68.2) + diodeDrop; // 1023steps / 15V = 68.2 + diode drop!
+    txBatt = (analogRead(BATTERY_DETECT_PIN) / 103.33) + diodeDrop; // 1023steps / 15V = 68.2 + diode drop!
+
+//使用5V 16MHz Pro Mini 编译。实际供电使用3V3,晶振使用自带16MHz晶振。
+
 #else // 8MHz / 3.3V
     txBatt = (analogRead(BATTERY_DETECT_PIN) / 103.33) + diodeDrop; // 1023steps / 9.9V = 103.33 + diode drop!
 #endif
