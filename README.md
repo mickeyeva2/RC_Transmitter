@@ -1,19 +1,19 @@
-# This is an Arduino 2.4GHz radio and IR transmitter for Atmel AVR
-## Features:
-- IR transmitter for "LEGO" Powerfunctions and trains as well as for "MECCANO" motors
-- 2.4GHz radio transmitter for RC cars, helicopters etc.
-- 4 analog axes, 2 mode switches (joystick buttons)
-- 1 potentiometer for adjustments like the MRSC stability control
-- 4 push buttons for transmission mode and vehicle selection as well as menu navigation
-- 10 seletcable vehicle addresses, so you can use it for more than one vehicle
-- 3.3V, 8MHz Pro Mini (a Pro Micro is not supported anymore due to additional functionality)
-- STM32 ARM version see: https://github.com/TheDIYGuy999/RC_Transmitter_STM32
-- 2.4GHz NRF24L01 radio module
-- Support for 0.96" I2C OLED
-- Configuration menu for: Channel direction reversing, servo travel adjustment (independent for each vehicle)
-- Configuration values are stored in EEPROM
+# 这是一个基于ATMEL AVR单片机的Arduino 2.4GHz和红外遥控发射
+## 特性:
+- 支持乐高红外遥控动力组件和MECCANO遥控火车
+- 适用于遥控车及直升机等2.4GHz遥控发射
+- 四个模拟输入轴, 两个模式切换开关（玩具摇杆自带按钮）
+- 一个电位器开关用于调整MRSC自稳模式
+- 四个按钮开关，调整发射模式，车辆模型类型切换，带菜单
+- 10个可选的模型编号,可切换遥控不同的模型
+- 使用3.3V, 8MHz Pro Mini (不支持Pro Micro)
+- STM32 ARM 版本 传送门: https://github.com/TheDIYGuy999/RC_Transmitter_STM32
+- 使用2.4GHz NRF24L01 无线模块
+- 使用0.96" I2C OLED
+- 设定餐单包括: 通道反向, 舵量微调 (每个模型分开保存)
+- 设定保存在单片机EEPROM内
 - NRF24L01+PA+LNA SMA radio modules with power amplifier are supported from board version 1.1
-- very compact
+- 简单易用
 - Eagle PCB included
 - PONG Game included
 
